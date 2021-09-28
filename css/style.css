@@ -263,7 +263,7 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 20rem);
-        gap: 2rem;
+        gap: 4rem;
     }
 }
 
@@ -279,9 +279,16 @@ img {
     background-size: 15rem;  
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center; 
+    transition-property: transition backgorund-size;
+    transition: .3s ease-out; 
 }
 
+.modelo:hover {
+    transform: scale(1.1);
+    background-size: 30rem;
+    
+}
 
 @media (min-width: 992px) { 
     .modelo {
